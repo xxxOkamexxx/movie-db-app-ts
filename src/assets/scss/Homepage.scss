@@ -1,0 +1,13 @@
+.main-container{
+  margin: 0;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 2em;
+  background-color: aqua;
+
+  .main-content {
+    width: 100%;
+    background-color: bisque;
+  }
+}
