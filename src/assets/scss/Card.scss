@@ -1,0 +1,31 @@
+.card {
+  background-color: transparent;
+  border: none;
+
+
+  figure {
+    transition: transform 0.5s, box-shadow 1s;
+  }
+
+  &:hover {
+    transform: scale(1.02) perspective(0px);
+  }
+
+  .cardImage {
+    border-radius: var(--v-imageBorderRadius);
+  }
+
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+
+
+    .cardTitle {
+      color: var(--v-headingColor);
+      margin-bottom: 0.5em;
+    }
+  }
+  
+
+}

@@ -1,21 +1,18 @@
-@import './Navbar.scss';
+// @import './Navbar.scss';
 @import './Homepage.scss';
+@import './Cardlist.scss';
+@import './Card.scss';
 @import 'bootstrap/scss/bootstrap';
 
 
-* {
-  padding: 0;
-  margin: 0 auto;
-}
 
-body {
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
 
-.m-auto {
-  margin: auto;
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
 }
 
 

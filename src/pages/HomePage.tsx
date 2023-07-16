@@ -1,36 +1,23 @@
-import React from 'react'
-import Popular from '../components/homepage/Popular'
-import NowPlaying from '../components/homepage/NowPlaying'
-import TopRated from '../components/homepage/TopRated'
+import CategorizedMovies from "../components/CategorizedMovies"
+import { ICategoryTitle, ICategoryType } from "../interfaces/type"
 
 const HomePage = () => {
+  console.log()
   return (
     <div className='main-container'>
-
-      <div className="hero-container">
-        <div className="hero">
-          Hero
-        </div>
-      </div>
-
-      <div className="popular-container main-content">
-        <div className="popular">
-          <Popular />
-        </div>
-      </div>
-
-      <div className="playing-now-container main-content">
-        <div className="playing-now">
-          <NowPlaying />
-        </div>
-      </div>
-
-      <div className="top-rated-container main-content">
-        <div className="top-rated">
-          <TopRated />
-        </div>
-      </div>
-
+      Hero
+      <CategorizedMovies 
+        type={ICategoryType.now_playing} 
+        title={ICategoryTitle.now_playing}
+      />
+      <CategorizedMovies 
+        type={ICategoryType.popular} 
+        title={ICategoryTitle.popular}
+      />
+      <CategorizedMovies 
+        type={ICategoryType.top_rated} 
+        title={ICategoryTitle.top_rated}
+      />
     </div>
   )
 }

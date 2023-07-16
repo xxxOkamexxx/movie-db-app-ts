@@ -1,0 +1,13 @@
+.listContainer {
+  padding: var(--v-space) 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 2em;
+  & .card {
+    width: 200px;
+  }
+}
