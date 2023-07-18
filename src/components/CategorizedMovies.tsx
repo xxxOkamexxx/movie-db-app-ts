@@ -12,8 +12,6 @@ interface Props {
 const CategorizedMovies = ({type, title}:Props) => {
   const { data, isLoading, isError, error } = useQuery(type, () => getCategorizedMovies(type))
 
-  console.log(data, isLoading, isError, error)
-
   if(isError) {
     if(error instanceof Error) {
       return(
@@ -27,7 +25,8 @@ const CategorizedMovies = ({type, title}:Props) => {
   return (
     <section className='homeContents'>
       <div>
-        <h2>{title}</h2>
+        <h2 className='categoryTitle'>{title}</h2>
+
       </div>
       {isLoading ? <p>Loadimg...</p> : data ? <MovieCardList data={data} /> : null}
     </section>

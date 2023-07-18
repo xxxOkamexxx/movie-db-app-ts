@@ -7,7 +7,7 @@ interface Props {
 }
 
 const MovieCardList = ({data}: Props) => {
-  console.log(data)
+  
 
   return (
     <div className="listContainer">

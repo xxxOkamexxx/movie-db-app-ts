@@ -12,10 +12,18 @@ const MovieCard = ({movie}: Props) => {
     ? `https://image.tmdb.org/t/p/w200${movie.poster_path}`
     : null;
 
+  const handleOnClick = () => {
+
+    navigate(`/movie/${movie.id}`);
+  }
+
 
   return (
     <>
-      <div className='card'>
+      <div 
+        className='card'
+        onClick={handleOnClick}
+      >
         <figure>
           {posterUrl ? (
             <img src={posterUrl} alt='' className='img' />

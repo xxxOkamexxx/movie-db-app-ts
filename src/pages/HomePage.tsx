@@ -1,11 +1,15 @@
 import CategorizedMovies from "../components/CategorizedMovies"
+import Hero from "../components/Hero"
+import Logo from "../components/Logo"
+
 import { ICategoryTitle, ICategoryType } from "../interfaces/type"
 
 const HomePage = () => {
   console.log()
   return (
-    <div className='main-container'>
-      Hero
+    <div className='main-container wContainer'>
+      <Hero />
+      
       <CategorizedMovies 
         type={ICategoryType.now_playing} 
         title={ICategoryTitle.now_playing}
@@ -18,6 +22,8 @@ const HomePage = () => {
         type={ICategoryType.top_rated} 
         title={ICategoryTitle.top_rated}
       />
+
+    
     </div>
   )
 }

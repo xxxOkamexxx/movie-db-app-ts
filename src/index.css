@@ -3,15 +3,23 @@
     2rem,
     2.2vw,
     3rem
-  ); /* space screen <1000px 20px, 30 / 1366 px (screen) * 100 = 2.2vw, screen >1334px 30px*/
+  ); 
 
   --v-maxPrimaryPageWidth: 1366px;
 
   --v-imageBorderRadius: 5px;
-  --v-baseColor: #d4a017;
-  --v-hoverColor: yellowgreen;
-  --v-headingColor: #555;
-  --v-gray: gray;
+  
+  /* color */
+  --v-bgdarkColor: #0d0d0d;
+  --v-primaryMainColor:#732650;
+  --v-primaryLightColor:#f285c1;
+  --v-secondaryMainColor:#f25835;
+  --v-secondaryLightColor:#f28444;
+
+  --v-textPrimaryColor: #555;
+  --v-textSecondaryColor: #777;
+  --v-white: white;
+
 }
 
 body {
@@ -43,7 +51,7 @@ h6 {
 }
 
 p {
-  color: #555;
+  color: var(--v-textPrimaryColor);
 }
 
 figure {
@@ -57,11 +65,11 @@ code {
 a,
 u {
   text-decoration: none;
-  color: var(--v-baseColor);
+  color: var(--v-secondaryLightColor);
 }
 
 hr {
-  color: var(--v-baseColor);
+  color: var(--v-textSecondaryColor);
 }
 
 .wContainer {
@@ -71,4 +79,16 @@ hr {
 
 .img {
   border-radius: var(--v-imageBorderRadius);
+}
+
+
+::-webkit-scrollbar{
+  height: 5px;
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--v-secondaryLightColor);
 }

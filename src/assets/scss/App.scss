@@ -1,11 +1,15 @@
 // @import './Navbar.scss';
 @import './Homepage.scss';
+
 @import './Cardlist.scss';
 @import './Card.scss';
+@import './Navbar.scss';
+@import './CategorizedMovies.scss';
+@import './Logo.scss';
+@import './Hero.scss';
+@import './SearhForm.scss';
+
 @import 'bootstrap/scss/bootstrap';
-
-
-
 
 
 .center {
@@ -13,6 +17,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 2em;
+}
+
+.marginTop90 {
+  margin-top: 90px;
 }
 
 

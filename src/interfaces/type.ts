@@ -10,6 +10,10 @@ export enum ICategoryTitle {
   top_rated = "Top 20",
 }
 
+export enum ITrendingType {
+  day = "day",
+  week = "week",
+}
 
 export enum IDataCategory {
   people = "people",
